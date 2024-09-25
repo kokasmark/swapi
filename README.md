@@ -23,32 +23,26 @@ Az alkalmazás a **SWAPI** használatával listázza az összes elérhető Star 
   - Egy hosszú kattintás rendezést végez az adott kategóriára vonatkozóan.
 - **Jelölés**: A jelenleg kiválasztott szűrőt sárga színű ikon jelzi, a rendezést pedig egy sárga körvonal.
 - **Részletek**: Egy karakter nevére hosszan kattintva legördülnek a karakter részletes adatai 
+
 ## Fejleszői jegyzetek
-- **Paginálás**: A paginálást kivettem az előző iterációból mivel így sokkal reszponzívabb az alkalmazás betöltés után, mely az automatikus filterelést elő segíti
-- **Created date**: Ezt az értéket kihagytam a karakterek listázásánál a UI letisztultsága érdekében, de lényegében ugyan azt a rendszert használná mint bármely másik sorting/filtering
+- **Paginálás**: A paginálást kivettem az előző iterációból mivel így sokkal reszponzívabb az alkalmazás betöltés után, mely az automatikus filterelést elő segíti.
+- **Created date**: Ezt az értéket kihagytam a karakterek listázásánál a UI letisztultsága érdekében, de lényegében ugyan azt a rendszert használná mint bármely másik sorting/filtering.
+
 ## Képek
 
-<div style="display: flex; justify-content: space-between; gap: 5px;">
-    <div style="display: flex; flex-direction: column;text-align: center; align-items:center;">
-        <img src="https://github.com/kokasmark/swapi/blob/master/assets/screenshot_0.png?raw=true" alt="Kék szemre szűrve, név szerint sorban"/>
-        Kék szemre szűrve, név szerint sorban
-    </div>
-    <div style="display: flex; flex-direction: column;text-align: center; align-items:center;">
-        <img src="https://github.com/kokasmark/swapi/blob/master/assets/screenshot_1.png?raw=true" alt="Skywalker névre szűrve, név szerint sorban" />
-        Skywalker névre szűrve, név szerint sorban
-    </div>
-    <div  style="display: flex; flex-direction: column;text-align: center; align-items:center;">
-        <img src="https://github.com/kokasmark/swapi/blob/master/assets/screenshot_2.png?raw=true" alt="Piros szemre szűrve, név szerint sorban" />
-        Piros szemre szűrve, név szerint sorban
-    </div>
-    <div  style="display: flex; flex-direction: column;text-align: center; align-items:center;">
-        <img src="https://github.com/kokasmark/swapi/blob/master/assets/screenshot_3.png?raw=true" alt="Boba fett részletei"/>
-      *Boba fett részletei
-    </div>
-</div>
+<p align="center">
+    <img src="https://github.com/kokasmark/swapi/blob/master/assets/screenshot_0.png?raw=true" alt="Kék szemre szűrve, név szerint sorban" width="22%"/>
+    <img src="https://github.com/kokasmark/swapi/blob/master/assets/screenshot_1.png?raw=true" alt="Skywalker névre szűrve, név szerint sorban" width="22%"/>
+    <img src="https://github.com/kokasmark/swapi/blob/master/assets/screenshot_2.png?raw=true" alt="Piros szemre szűrve, név szerint sorban" width="22%"/>
+    <img src="https://github.com/kokasmark/swapi/blob/master/assets/screenshot_3.png?raw=true" alt="Boba fett részletei" width="22%"/>
+</p>
 
+- *Kék szemre szűrve, név szerint sorban*
+- *Skywalker névre szűrve, név szerint sorban*
+- *Piros szemre szűrve, név szerint sorban*
+- *Boba Fett részletei*
 
 ## Futtatás
 - **npm i**: a csomagok installálása
 - **npx expo start**: expo indítása -> expo alkalmazás
-- **expo go alkalmazás telepítése**: ezzel az alkalmazással könnyen egy QR kód beolvasásával (melyet a start után ír ki a consoleba) lehet az alkalmazást tesztelni telefonon
+- **expo go alkalmazás telepítése**: ezzel az alkalmazással könnyen egy QR kód beolvasásával (melyet a start után ír ki a consoleba) lehet az alkalmazást tesztelni telefonon.
