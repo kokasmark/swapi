@@ -11,8 +11,6 @@ async function GetCharacters() {
         try {
             const response = await fetch(`https://swapi.dev/api/people?page=${page}`, requestOptions);
             const result = await response.json();
-
-            // Extract relevant data from each character and push to the allCharacters array
             result.results.forEach(character => {
                 allCharacters.push({
                     name: character.name,
@@ -23,20 +21,18 @@ async function GetCharacters() {
                     skin_color: character.skin_color
                 });
             });
-
-            // If no more pages, break out of the loop
             if (!result.next) {
                 break;
             }
 
-            page++; // Move to the next page
+            page++;
         } catch (error) {
             console.error('Error fetching characters:', error);
             break;
         }
     }
 
-    return allCharacters; // Return all characters
+    return allCharacters;
 }
 
 
